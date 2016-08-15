@@ -234,55 +234,6 @@ pre {
     font-size: .9em;
 }
 
-.round-pic {
-    width: 300px;
-    margin: 2em 0 2em 6em;
-    float: right;
-    border-radius: 100%;
-}
-
-a.btn {
-    display: inline-block;
-    margin: 1em 0 2em 0;
-    border-radius: 3px;
-    color: #9E5726;
-    border: 2px solid #1b6e68;
-    border-image: url('images/copper.jpg') 2 2 stretch;
-    background: none;
-    font-weight: 700;
-    line-height: 1.4;
-    padding: 8px 12px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    white-space: nowrap;
-    background: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
-    -webkit-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
-    -moz-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
-    -o-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
-    -ms-transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
-    transition: background 0.1s ease-out,border-color 0.1s ease-out,color 0.05s ease-out;
-}
-
-a.btn:hover,
-a.btn:focus {
-    background-color: #1b6e68;
-    background: url('images/copper.jpg');
-    background-size: cover;
-    color: #fff;
-}
-
-a.btn i {
-    color: #9E5726;
-}
-
-a.btn:hover i,
-a.btn:focus i {
-    color: #fff;
-}
-
 
 /* utility classes */
 .vidaloka {
@@ -366,10 +317,6 @@ a.btn:focus i {
         height: 400px;
     }
 
-    video {
-        top: 0;
-    }
-
     .banner {
         margin-top: 4em;
     }
@@ -380,6 +327,14 @@ a.btn:focus i {
 }
 
 @media (max-width: 600px) {
+
+    .content a {
+        line-height: 1.5em;
+    }
+
+    h5 a {
+        line-height: 1.5em;
+    }
 
     .hide-xs {
         display: none;
@@ -399,7 +354,6 @@ a.btn:focus i {
 
     .banner {
         margin-top: 2em;
-        padding: 1em;
     }
 
     .banner h1, .banner h2 {
@@ -407,19 +361,11 @@ a.btn:focus i {
     }
 
     .banner h3 {
-        font-size: 1em;
+        font-size: 0.75em;
     }
 
-    .pause-button {
-        font-size: 1em;
-    }
-
-    .round-pic {
-        margin: 2em auto;
-        padding: 0;
-        width: 90%;
-        float: none;
-        display: block;
+    .footer {
+        line-height: 1.2em;
     }
 
     .right-footer {
@@ -428,5 +374,9 @@ a.btn:focus i {
 
     .nav-item {
         padding: 0em 0.6em 0em 0em;
+    }
+
+    .bg-girl {
+        background-position-x: 30%;
     }
 }

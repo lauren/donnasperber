@@ -23,7 +23,6 @@ $(document).ready(function () {
     });
 
     navLinks.on('click', function (event) {
-        console.log(event.target.dataset.navItem);
         var item = event.target.dataset.navItem,
             targetHeaderElement = $('[data-header-item="' + item + '"]')[0],
             targetY = targetHeaderElement.offsetTop - targetHeaderElement.offsetHeight - navHeight - CONSTANTS.NAV_PADDING;
