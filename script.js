@@ -4,7 +4,7 @@ $(document).ready(function () {
         NAV_PADDING: 10
     };
 
-    var navLinks = $('[data-ui="nav-item'),
+    var navLinks = $('[data-ui="nav-item"]'),
         navElement = $('[data-ui="nav"]'),
         topOfNav = navElement[0].offsetTop,
         navHeight = navElement[0].offsetHeight,
