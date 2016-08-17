@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-    var CONSTANTS = {
-        NAV_PADDING: 10
-    };
+    var NAV_PADDING = 10;
 
     var navLinks = $('[data-ui="nav-item"]'),
         navElement = $('[data-ui="nav"]'),
@@ -25,10 +23,10 @@ $(document).ready(function () {
     navLinks.on('click', function (event) {
         var item = event.target.dataset.navItem,
             targetHeaderElement = $('[data-header-item="' + item + '"]')[0],
-            targetY = targetHeaderElement.offsetTop - targetHeaderElement.offsetHeight - navHeight - CONSTANTS.NAV_PADDING;
+            targetY = targetHeaderElement.offsetTop - targetHeaderElement.offsetHeight - navHeight - NAV_PADDING;
 
         $('html, body').animate({
-          scrollTop: targetY
+            scrollTop: targetY
         }, 1000);
     });
 
